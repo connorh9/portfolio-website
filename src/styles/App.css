@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Debugging outlines */
+/* * {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+} */
+
+:root {
+	--font-family: "Noto Sans", sans-serif;
+	--bg-color: #0e0e0e;
+	--bg-accent: rgb(42, 42, 42);
+	--off-white: rgb(245, 245, 245);
+	--primary-color: rgb(180, 142, 229);
+	--primary-shadow: rgb(127, 94, 162);
+	--secondary-color: rgb(169, 169, 169);
+	--secondary-shadow: rgb(112, 112, 112);
+}
+
+body {
+	/* overflow-x: hidden; */
+	background-color: var(--bg-color);
+	color: var(--off-white);
+	font-family: var(--font-family);
+	font-optical-sizing: auto;
+	font-weight: 300 !important;
+	width: 100vw;
+}
+
+h1 {
+	font-family: "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 3.5rem;
+	color: var(--primary-color);
+	position: relative;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+h1::after {
+	content: "";
+	display: block;
+	width: min(20rem, 80%);
+	height: 2px;
+	background-color: var(--primary-color);
+	margin: 0.75rem auto 0;
+	border-radius: 2px;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-weight: 350;
+	font-size: larger;
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-shadow);
+}
+
+.content-section {
+	padding: 3rem 0 0 0;
+}

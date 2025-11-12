@@ -1,0 +1,25 @@
+.contact-section {
+	padding: 4rem 2rem;
+}
+
+@media (max-width: 800px) {
+	.contact-section {
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+.contact-section .form-control {
+	color: var(--off-white);
+	background-color: var(--bg-accent);
+	border: none;
+}
+
+.contact-section .form-control::placeholder {
+	color: var(--secondary-color);
+}
+
+button {
+	background-color: var(--primary-color);
+	border: none;
+	padding: 0.5rem 2rem;
+}
