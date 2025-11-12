@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 //import HTMLlogo from "../../assets/icons/html.svg";
-//import CSSlogo from "../../assets/icons/css.svg";
+import CSSlogo from "../../assets/icons/css.png";
 //import JSlogo from "../../assets/icons/javascript.svg";
 //import Reactlogo from "../../assets/icons/react.svg";
 //import Nextlogo from "../../assets/icons/nextjs.svg";
@@ -14,9 +14,9 @@ import "./About.css";
 import ProfilePic from "../../assets/images/portrait.jpg";
 
 const skills = [
-  { icon: PythonLogo, name: "Python" },
+  { icon: PythonLogo, name: "PYTHON" },
 //   { icon: JSlogo, name: "JavaScript" },
-//   { icon: CSSlogo, name: "CSS" },
+  { icon: CSSlogo, name: "CSS" },
 //   { icon: Reactlogo, name: "React" },
 //   { icon: Nextlogo, name: "Next.js" },
 //   { icon: Expresslogo, name: "Express.js" },
