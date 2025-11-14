@@ -2,26 +2,36 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 //import HTMLlogo from "../../assets/icons/html.svg";
 import CSSlogo from "../../assets/icons/css.png";
-//import JSlogo from "../../assets/icons/javascript.svg";
-//import Reactlogo from "../../assets/icons/react.svg";
+import JSlogo from "../../assets/icons/js.png";
+import Reactlogo from "../../assets/icons/react.png";
 //import Nextlogo from "../../assets/icons/nextjs.svg";
 //import Expresslogo from "../../assets/icons/express.svg";
 //import Nodelogo from "../../assets/icons/nodejs.svg";
 //import Gitlogo from "../../assets/icons/git.svg";
 import PythonLogo from "../../assets/icons/icons8-python-48.svg"
+import Gitlogo from "../../assets/icons/git.png"
+import Postgreslogo from "../../assets/icons/Postgres.png"
+import sqllogo from "../../assets/icons/sql.png"
+import javalogo from "../../assets/icons/java.png"
+import dockerlogo from "../../assets/icons/Docker.png"
+import Clogo from "../../assets/icons/C.png"
+
 import CanvasDots from "../CanvasDots/CanvasDots";
 import "./About.css";
 import ProfilePic from "../../assets/images/portrait.jpg";
 
 const skills = [
   { icon: PythonLogo, name: "PYTHON" },
-//   { icon: JSlogo, name: "JavaScript" },
   { icon: CSSlogo, name: "CSS" },
-//   { icon: Reactlogo, name: "React" },
-//   { icon: Nextlogo, name: "Next.js" },
-//   { icon: Expresslogo, name: "Express.js" },
-//   { icon: Nodelogo, name: "Node.js" },
-//   { icon: Gitlogo, name: "Git" },
+  { icon: Clogo, name: "C" },
+  { icon: JSlogo, name: "JAVASCRIPT" },
+  { icon: Reactlogo, name: "REACT" },
+  { icon: dockerlogo, name: "DOCKER" },
+  { icon: sqllogo, name: "SQL" },
+  { icon: javalogo, name: "JAVA" },
+  { icon: Gitlogo, name: "GIT" },
+  { icon: Postgreslogo, name: "POSTGRES" },
+  
 ];
 
 const About = () => {
@@ -39,6 +49,12 @@ const About = () => {
               About <span className="highlight">Me</span>
             </h1>
             <p className="about-text">
+              I'm a Junior Software Engineer committed to building tools that make 
+              lives easier and more efficient. With a strong foundation in computer 
+              science from UW–Madison, I love taking ideas from concept to production.
+              Fullstack development is like building a skyscraper... you better hope
+              your foundation is solid.
+
               Fully committed to the philosophy of life-long learning, I’m a full stack
               developer with a deep passion for JavaScript, React, and all things web
               development. The unique combination of creativity, logic, and technology —
