@@ -44,7 +44,7 @@ const HeroCanvas = () => {
 					`rgba($1, ${opacity})`
 				);
 			} else {
-				const fixedOpacity = 0.35; // 👈 adjust this for more or less visibility
+				const fixedOpacity = 0.5;
 				fillColor = dot.color.replace(
 					/rgba\((.*?),\s*\d+\.?\d*\)/,
 					`rgba($1, ${fixedOpacity})`

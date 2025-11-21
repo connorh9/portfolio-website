@@ -10,8 +10,8 @@ export default function HeroBg() {
       "rgb(81, 162, 233)",
       "rgb(81, 162, 233)",
       "rgb(81, 162, 233)",
-      "rgb(81, 162, 233)",
-      "rgb(255, 77, 90)",
+      "rgb(180, 140, 230)",
+      "rgb(160, 120, 230)",
     ];
     const color = "rgb(81, 162, 233)";
 
@@ -28,16 +28,16 @@ export default function HeroBg() {
 
     const windowSize = window.innerWidth;
     let dots = windowSize > 1600
-      ? { nb: 600, distance: 70, d_radius: 300, array: [] }
+      ? { nb: 500, distance: 70, d_radius: 300, array: [] }
       : windowSize > 1300
-      ? { nb: 575, distance: 60, d_radius: 280, array: [] }
+      ? { nb: 475, distance: 60, d_radius: 280, array: [] }
       : windowSize > 1100
-      ? { nb: 500, distance: 55, d_radius: 250, array: [] }
+      ? { nb: 400, distance: 55, d_radius: 250, array: [] }
       : windowSize > 800
-      ? { nb: 300, distance: 0, d_radius: 0, array: [] }
-      : windowSize > 600
       ? { nb: 200, distance: 0, d_radius: 0, array: [] }
-      : { nb: 100, distance: 0, d_radius: 0, array: [] };
+      : windowSize > 600
+      ? { nb: 100, distance: 0, d_radius: 0, array: [] }
+      : { nb: 50, distance: 0, d_radius: 0, array: [] };
 
     function Dot() {
       this.x = Math.random() * canvas.width;
@@ -86,7 +86,7 @@ export default function HeroBg() {
               const dotDistance = ((i_dot.x - mousePosition.x) ** 2 + (i_dot.y - mousePosition.y) ** 2) ** 0.5;
               let distanceRatio = dotDistance / dots.d_radius;
               distanceRatio = Math.max(distanceRatio - 0.3, 0);
-              ctx.strokeStyle = `rgb(81, 162, 233, ${1 - distanceRatio})`;
+              ctx.strokeStyle = `rgba(226, 196, 255, ${(1 - distanceRatio) * .65})`;
               ctx.stroke();
               ctx.closePath();
             }

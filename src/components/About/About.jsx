@@ -37,7 +37,7 @@ const skills = [
 const About = () => {
   return (
     <section id="about" className="about-section">
-	  <CanvasDots />
+	  <CanvasDots density={.05}/>
       <Container fluid>
         <Row className="align-items-center justify-content-center">
           {/* Left side: text and outline icon */}
@@ -46,21 +46,15 @@ const About = () => {
 				<img src={ProfilePic} alt="Profile" className="profile-image" />
 			</div>
             <h1 className="about-title">
-              About <span className="highlight">Me</span>
+              About Me
             </h1>
             <p className="about-text">
               I'm a Junior Software Engineer committed to building tools that make 
               lives easier and more efficient. With a strong foundation in computer 
               science from UW–Madison, I love taking ideas from concept to production.
-              Fullstack development is like building a skyscraper... you better hope
-              your foundation is solid.
-
-              Fully committed to the philosophy of life-long learning, I’m a full stack
-              developer with a deep passion for JavaScript, React, and all things web
-              development. The unique combination of creativity, logic, and technology —
-              and never running out of new things to discover — drives my excitement for
-              building meaningful applications. When I’m not coding, I enjoy reading,
-              staying active, and playing guitar.
+              I appreciate the way which fullstack development forces me to really 
+              learn new material. When I'm not at my computer you can find me golfing, 
+              playing pickleball, or testing out new recipes in the kitchen!
             </p>
           </Col>
 

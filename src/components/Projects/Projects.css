@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .projects-section {
 	position: relative;
 	overflow: hidden;
-	/* Use the same gradient as your hero/about sections */
-	background: linear-gradient(180deg, #0e0e0e 0%, #121212 100%);
+	background: #0e0e0e;
 	color: var(--off-white);
 	
 	padding-top: 3rem;
@@ -47,7 +48,7 @@ z-index: 1;
 }
 
 .project-card {
-	background-color: var(--bg-accent);
+	background-color: #161515;
 	color: var(--off-white);
 	border: 4px;
 	border-color: var(--primary-color);
@@ -167,5 +168,12 @@ z-index: 1;
 	color: var(--primary-shadow) !important;
 	border-color: var(--primary-shadow) !important;
 }
+
+.project-card .card-text {
+	font-weight: 450; 
+	font-size: 1.15rem;
+	line-height: 1.6;
+	color: #e9e5e5;
+  }
 
 

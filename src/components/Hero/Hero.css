@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
 .hero-section {
 	position: relative;
 	height: 100vh;
@@ -41,15 +44,22 @@ canvas {
 	color: var(--off-white);
 }
 
+.hero-name::after {
+    display: none !important;
+}
+
 .highlighted-name {
 	color: var(--primary-color);
+	font-size: 3.75rem;
+	font-weight: 400;
 }
 
 .hero-title {
-	color: var(--secondary-color);
-	font-weight: 350;
+	color: var(--off-white);
+	font-weight: 300;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
+	font-family: montserrat, sans-serif;
 }
 
 .scroll-button {

@@ -22,8 +22,8 @@ const Contact = () => {
 		e.preventDefault();
 
 		emailjs
-			.send("service_gkrpyqy", "template_i5eyiqo", formData, {
-				publicKey: "RE9o1-zQrOZJ1h95R"
+			.send("service_a8gomev", "template_pf7lxle", formData, {
+				publicKey: "g_CayG4_1T30IH7RS"
 			})
 			.then(
 				result => {

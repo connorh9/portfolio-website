@@ -30,7 +30,7 @@ const Hero = () => {
 			<HeroBg />
 			<div className="hero-content">
 				<animated.h1 style={nameAnimation} className="hero-name">
-					Hello, I'm <span className="highlighted-name">Connor</span>
+					Hi, I'm <span className="highlighted-name">Connor</span>,
 				</animated.h1>
 				<animated.h2 style={titleAnimation} className="hero-title">
 					A Junior Software Engineer

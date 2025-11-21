@@ -9,28 +9,28 @@ const Footer = () => (
 	<footer className="footer">
 		<div className="icon-links">
 			<a
-				href="https://www.linkedin.com/in/henrywbarber"
+				href="https://linkedin.com/in/connor-hughes-cs"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				<Image src={linkedInLogo} alt="Linkedin" />
 			</a>
 			<a
-				href="mailto:henrywbarber@gmail.com"
+				href="mailto:connorh.swe@gmail.com"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				<Image src={emailLogo} alt="Email" />
 			</a>
 			<a
-				href="https://github.com/henrywbarber"
+				href="https://github.com/connorh9"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				<Image src={gitHubLogo} alt="Github" />
 			</a>
 		</div>
-		<p>Henry Barber ©2025</p>
+		<p>Connor Hughes ©2025</p>
 	</footer>
 );
 

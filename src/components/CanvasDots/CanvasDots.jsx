@@ -11,15 +11,15 @@ const CanvasDots = ({ density = 1.0 }) => {
     const colorDot = [
       "rgb(81, 162, 233)",
       "rgb(81, 162, 233)",
-      "rgb(81, 162, 233)",
-      "rgb(255, 77, 90)",
+      "rgb(180, 140, 230)",
+      "rgb(160, 120, 230)"
     ];
 
     const resizeCanvas = () => {
       const dpr = window.devicePixelRatio || 1;
       
       // Get the parent section's full scroll height
-      const parentSection = canvas.closest('.projects-section');
+      const parentSection = canvas.closest('section');
       const displayWidth = parentSection ? parentSection.scrollWidth : document.body.scrollWidth;
       const displayHeight = parentSection ? parentSection.scrollHeight : window.innerHeight;
 
@@ -62,10 +62,10 @@ const CanvasDots = ({ density = 1.0 }) => {
     const windowSize = window.innerWidth;
     let dots;
 
-    if (windowSize > 1600) dots = { nb: 25, distance: 0, d_radius: 0, array: [] };
-    else if (windowSize > 1300) dots = { nb: 20, distance: 0, d_radius: 0, array: [] };
-    else if (windowSize > 1100) dots = { nb: 15, distance: 0, d_radius: 0, array: [] };
-    else dots = { nb: 1, distance: 0, d_radius: 0, array: [] };
+    if (windowSize > 1600) dots = { nb: 40, distance: 0, d_radius: 0, array: [] };
+    else if (windowSize > 1300) dots = { nb: 35, distance: 0, d_radius: 0, array: [] };
+    else if (windowSize > 1100) dots = { nb: 25, distance: 0, d_radius: 0, array: [] };
+    else dots = { nb: 1, distance: 0, d_radius: 10, array: [] };
 
     if (windowSize <= 1100) ctx.globalAlpha = 0;
 
